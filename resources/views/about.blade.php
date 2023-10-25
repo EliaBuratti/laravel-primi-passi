@@ -16,16 +16,10 @@
 </head>
 
 <body class="antialiased">
-    <h1>Welcome to home page</h1>
+    <h1>Welcome to about page</h1>
+    <p>{{ $message }}</p>
 
-    <h4>List of all routing</h4>
-    <ul>
-        @foreach($lists_route as $list)
-        <li>
-            <a href='{{ $list }}'>{{ $list }}</a>
-        </li>
-        @endforeach
-    </ul>
+    <a href="/">Go Home page</a>
 </body>
 
 </html>

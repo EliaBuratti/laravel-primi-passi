@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -16,16 +15,29 @@
 </head>
 
 <body class="antialiased">
-    <h1>Welcome to home page</h1>
+    <h1>Welcome to Help page</h1>
 
-    <h4>List of all routing</h4>
-    <ul>
-        @foreach($lists_route as $list)
-        <li>
-            <a href='{{ $list }}'>{{ $list }}</a>
-        </li>
-        @endforeach
-    </ul>
+    <p>{{ $message }}</p>
+
+    <section>
+        <h2>Common problems</h2>
+
+        <ul>
+            @foreach ($faqs as $answer => $response)
+
+            <li>
+                <h4>{{ $answer }}</h4>
+                <p>{{ $response }}</p>
+            </li>
+
+            @endforeach
+        </ul>
+    </section>
+
+    <a href="/">Go Home page</a>
+
+
+
 </body>
 
 </html>
