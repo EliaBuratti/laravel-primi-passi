@@ -15,7 +15,7 @@
     <!-- Styles -->
 </head>
 
-<body class="antialiased">
+<body class="antialiased ">
     <h1>Welcome to home page</h1>
 
     <h4>List of all routing</h4>

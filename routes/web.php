@@ -17,7 +17,7 @@ Route::get('/', function () {
 
     $lists_route = ['/about', '/help'];
     return view('home', compact('lists_route'));
-});
+})->name('home');
 
 Route::get('/help', function () {
 
@@ -28,11 +28,11 @@ Route::get('/help', function () {
         'third answer' => 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident reprehenderit amet ullam id deserunt maxime, iste architecto neque ipsam consectetur voluptas perferendis, magnam aut placeat ad, necessitatibus iure aperiam eaque.',
     ];
     return view('help', compact('message', 'faqs'));
-});
+})->name('help');
 
 
 Route::get('/about', function () {
 
     $message = 'Find us on socials';
     return view('about', compact('message'));
-});
+})->name('about');
